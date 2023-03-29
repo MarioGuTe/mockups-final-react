@@ -22,41 +22,38 @@ body,
   font-family: var(--font-title);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.card-container {
+.details-card-container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.card {
+.details-card {
   width: 88%;
   display: flex;
   flex-direction: column;
   gap: 2em;
   padding: 10px;
   background: var(--white);
-  /* height: 78%; */
   border-radius: 12px;
   box-shadow: 1.5px 1.5px 1.5px hsl(0, 100%, 0%, 0.2),
     -1.5px 1.5px 1.5px hsl(0, 100%, 0%, 0.2);
 }
 
-.card-head {
+.details-card-head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: var(--third-color);
   font-weight: 700;
   padding: 10px;
 }
 
-.icon-container {
+.details-icon-container {
   background: var(--secondary-color);
   color: var(--white);
   width: 40px;
@@ -68,7 +65,7 @@ body,
   font-size: 1.125rem;
 }
 
-.card-body {
+.details-card-body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,25 +86,26 @@ body,
   font-size: 1.3rem;
 }
 
-.card-body h1 {
+.details-card-body h1 {
   font-size: 1.4rem;
   color: var(--third-color);
 }
 
-.actions-container {
+.details-actions-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-figure {
-  width: 60%;
+.details-img-container {
+  width: 100%;
 }
 
-img {
+.details-img-container img {
   width: 100%;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
 }
 
 button {
@@ -124,21 +122,21 @@ button {
 }
 
 @media (min-width: 600px) {
-  .card {
+  .details-card {
     width: 70%;
   }
 }
 
 @media (min-width: 800px) {
-  .card {
+  .details-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
   }
-  .card-body {
+  .details-card-body {
     text-align: center;
   }
-  .card-body h1,
+  .details-card-body h1,
   .price {
     text-align: center;
 
@@ -148,7 +146,7 @@ button {
 
 @media (min-width: 1000px) {
   .price,
-  .card-body h1 {
+  .details-card-body h1 {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1.8rem;

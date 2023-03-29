@@ -4,20 +4,20 @@ import zanzibar from "./zanzibar.png";
 
 function Details() {
   return (
-    <div className="card-container">
-      <div className="card">
-        <div className="card-head">
-          <div className="actions-container">
+    <div className="details-card-container">
+      <div className="details-card">
+        <div className="details-card-head">
+          <div className="details-actions-container">
             <p>Volver</p>
-            <div className="icon-container">
+            <div className="details-icon-container">
               <i className="fa-solid fa-heart"></i>
             </div>
           </div>
-          <figure>
+          <figure className="details-img-container">
             <img src={zanzibar} alt="" />
           </figure>
         </div>
-        <div className="card-body">
+        <div className="details-card-body">
           <h1>Planta Decorativa</h1>
           <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
