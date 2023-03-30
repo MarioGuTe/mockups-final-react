@@ -1,32 +1,32 @@
 import React from "react";
-import "./Details.css";
+import styles from "./Details.module.css";
 import zanzibar from "./zanzibar.png";
 
 function Details() {
   return (
-    <div className="details-card-container">
-      <div className="details-card">
-        <div className="details-card-head">
-          <div className="details-actions-container">
+    <div className={styles.detailsCardContainer}>
+      <div className={styles.detailsCard}>
+        <div className={styles.detailsCardHead}>
+          <div className={styles.detailsActionsContainer}>
             <p>Volver</p>
-            <div className="details-icon-container">
+            <div className={styles.detailsIconContainer}>
               <i className="fa-solid fa-heart"></i>
             </div>
           </div>
-          <figure className="details-img-container">
+          <figure className={styles.detailsImgContainer}>
             <img src={zanzibar} alt="" />
           </figure>
         </div>
-        <div className="details-card-body">
+        <div className={styles.detailsCardBody}>
           <h1>Planta Decorativa</h1>
-          <p className="description">
+          <p className={styles.description}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
             excepturi, modi laborum tenetur deserunt nihil debitis ullam
             provident nisi aut architecto velit quod asperiores corporis
             obcaecati, labore vitae? Obcaecati, ipsa.
           </p>
-          <p className="price">$9990</p>
-          <button>Agregar al Carro</button>
+          <p className={styles.price}>$9990</p>
+          <button className={styles.detailsButton}>Agregar al Carro</button>
         </div>
       </div>
     </div>

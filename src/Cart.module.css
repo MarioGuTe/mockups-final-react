@@ -23,18 +23,25 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid black;
 }
 
-.cart-main-container {
-  width: 100%;
-  height: 100%;
+nav,
+footer {
+  padding: 20px;
+  background: blue;
+}
+
+.cartMainContainer {
+  height: 88vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid red;
 }
 
-.items-section {
+.itemsSection {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,7 +51,7 @@ body,
   padding: 2px;
 }
 
-.card-product {
+.cardProduct {
   background: var(--white);
   width: 86%;
   box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 0%, 0.2),
@@ -72,7 +79,7 @@ h1 {
   font-size: 1.4rem;
 }
 
-.card-description {
+.cardDescription {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,26 +87,26 @@ h1 {
   gap: 0.5em;
 }
 
-.card-description h2 {
+.cardDescription h2 {
   color: var(--secondary-color);
   font-size: 1rem;
 }
 
-.card-description p {
+.cardDescription p {
   color: var(--third-color);
   font-size: 1.125rem;
   letter-spacing: 0.5px;
   font-weight: 600;
 }
 
-.product-qty {
+.productQty {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.product-qty p {
+.productQty p {
   background: var(--primary-color);
   font-size: 1.2rem;
   color: var(--third-color);
@@ -111,23 +118,19 @@ h1 {
 .add {
   background: var(--secondary-color);
   border: none;
-  border-radius: 0;
   color: var(--white);
   font-size: 1rem;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 28px;
+  height: 28px;
 }
 
-.checkout-container {
+.checkoutContainer {
   display: flex;
   flex-direction: column;
   min-width: 100%;
 }
 
-.checkout-card {
+.checkoutCard {
   background: var(--white);
   min-width: 100%;
   display: flex;
@@ -136,7 +139,7 @@ h1 {
   gap: 6em;
 }
 
-.checkout-text {
+.checkoutText {
   display: flex;
   justify-content: space-between;
   width: 88%;
@@ -148,7 +151,7 @@ h1 {
   letter-spacing: 0.5px;
 }
 
-.checkout-btn-container button {
+.btnContainer button {
   background: var(--secondary-color);
   color: var(--white);
   padding: 1em 7em;
@@ -160,50 +163,50 @@ h1 {
 }
 
 @media (max-width: 330px) {
-  .checkout-btn-container button {
+  .checkoutContainer button {
     padding: 1em 3em;
   }
 }
 
 @media (min-width: 700px) {
-  .card-product {
+  .cardProduct {
     width: 80%;
   }
-  .checkout-btn-container button {
+  .checkoutContainer button {
     padding: 1em 8em;
   }
 }
 
 @media (min-width: 900px) {
-  .cart-main-container {
+  .cartMainContainer {
     display: grid;
     align-items: flex-start;
     grid-template-columns: 60% 40%;
     margin-top: 6%;
-    height: 100%;
+    height: 82vh;
   }
 
-  .checkout-btn-container button {
+  .checkoutContainer button {
     padding: 1em 7.8em;
   }
 
-  .card-product {
+  .cardProduct {
     width: 80%;
   }
-  .product-qty {
+  .productQty {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .product-qty p {
-    height: 30px;
+  .productQty p {
+    height: 28px;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .product-qty button {
+  .productQty button {
     width: 30px;
     height: 30px;
     font-size: 1.4rem;

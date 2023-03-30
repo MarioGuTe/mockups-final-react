@@ -25,26 +25,26 @@ body,
   justify-content: space-between;
 }
 
-.details-card-container {
+.detailsCardContainer {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.details-card {
+.detailsCard {
   width: 88%;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  padding: 10px;
+  /* padding: 10px; */
   background: var(--white);
   border-radius: 12px;
   box-shadow: 1.5px 1.5px 1.5px hsl(0, 100%, 0%, 0.2),
     -1.5px 1.5px 1.5px hsl(0, 100%, 0%, 0.2);
 }
 
-.details-card-head {
+.detailsCardHead {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,14 @@ body,
   padding: 10px;
 }
 
-.details-icon-container {
+.detailsActionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.detailsIconContainer {
   background: var(--secondary-color);
   color: var(--white);
   width: 40px;
@@ -65,13 +72,26 @@ body,
   font-size: 1.125rem;
 }
 
-.details-card-body {
+.detailsImgContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailsCardBody {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.2em;
-  padding: 10px;
+  padding: 20px;
 }
 
 .description {
@@ -86,29 +106,12 @@ body,
   font-size: 1.3rem;
 }
 
-.details-card-body h1 {
+.detailsCardBody h1 {
   font-size: 1.4rem;
   color: var(--third-color);
 }
 
-.details-actions-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.details-img-container {
-  width: 100%;
-}
-
-.details-img-container img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-}
-
-button {
+.detailsButton {
   background: var(--secondary-color);
   width: 100%;
   padding: 14px;
@@ -122,31 +125,30 @@ button {
 }
 
 @media (min-width: 600px) {
-  .details-card {
+  .detailsCard {
     width: 70%;
   }
 }
 
 @media (min-width: 800px) {
-  .details-card {
+  .detailsCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
   }
-  .details-card-body {
+  .detailsCardBody {
     text-align: center;
   }
-  .details-card-body h1,
+  .detailsCardBody h1,
   .price {
     text-align: center;
-
     width: 100%;
   }
 }
 
 @media (min-width: 1000px) {
   .price,
-  .details-card-body h1 {
+  .detailsCardBody h1 {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1.8rem;
